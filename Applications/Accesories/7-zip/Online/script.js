@@ -8,7 +8,8 @@ new OnlineInstallerScript()
     .url("https://versaweb.dl.sourceforge.net/project/sevenzip/7-Zip/24.09/7z2409.exe?viasf=1")
     .checksum("2135a90a9f6c3202c32a87b1c5cf805ce294a497")
     .category("Accesories")
-    .preInstall(function (wine) {
+    .preInstall(function (wine, wizard) {
+        wizard.message("Installing 7-Zip in silent mode.");
         wine.run(this.url(), ["/S"]);
     })
     .executable("7zFM.exe");
