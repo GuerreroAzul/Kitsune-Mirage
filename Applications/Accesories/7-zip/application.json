@@ -1,5 +1,5 @@
 {
-    "name"        : "7-zipTest",
-    "id"          : "applications.accessories.7zipTest",
-    "description" : "7-Zip is a file archiver with a high compression ratio. 7-Zip is open source software. Most of the source code is under the GNU LGPL license. The unRAR code is under a mixed license: GNU LGPL + unRAR restrictions. You can use 7-Zip on any computer, including a computer in a commercial organization. You don't need to register or pay for 7-Zip."
+    "name"        : "7-zip",
+    "id"          : "applications.accessories.7zip",
+    "description" : "<h2>Feature-rich archiving software with top-tier compression in 7z, integration in Windows Shell, AES-256 encryption, and multi-format support, including TAR, ZIP, RAR.</h2>"
 }
