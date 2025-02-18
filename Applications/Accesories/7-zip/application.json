@@ -1,5 +1,5 @@
 {
-    "name"        : "7-zip",
-    "id"          : "applications.accessories.7zip",
+    "name"        : "<h1><b>7-zip</b></h1>",
+    "id"          : "applications.accessories.KM-7zip",
     "description" : "<h2>Feature-rich archiving software with top-tier compression in 7z, integration in Windows Shell, AES-256 encryption, and multi-format support, including TAR, ZIP, RAR.</h2>"
 }

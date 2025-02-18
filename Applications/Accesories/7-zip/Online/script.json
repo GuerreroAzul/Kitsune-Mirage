@@ -1,6 +1,6 @@
 {
     "scriptName"                 : "Online",
-    "id"                         : "applications.accessories.7zip.online",
+    "id"                         : "applications.accessories.KM-7zip.online",
     "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
     "testingOperatingSystems"    : [],
     "free"                       : true,
