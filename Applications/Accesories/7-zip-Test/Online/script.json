@@ -1,6 +1,6 @@
 {
     "scriptName"                 : "Online",
-    "id"                         : "applications.accessories.7zip.online",
+    "id"                         : "applications.accessories.7zip-Test.online",
     "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
     "testingOperatingSystems"    : [],
     "free"                       : true,
