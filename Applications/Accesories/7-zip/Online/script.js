@@ -5,7 +5,10 @@ new OnlineInstallerScript()
     .editor("Igor Pavlov")
     .applicationHomepage("http://www.7-zip.org/")
     .author("GuerreroAzul")
-    .url("https://versaweb.dl.sourceforge.net/project/sevenzip/7-Zip/24.09/7z2409.exe?viasf=1")
+    .url("https://www.7-zip.org/a/7z2409.exe")
     .checksum("2135a90a9f6c3202c32a87b1c5cf805ce294a497")
     .category("Accesories")
+    .preInstall(function (wine){
+        wine.run(this.url(), ["/S"]);
+    })
     .executable("7zFM.exe");
