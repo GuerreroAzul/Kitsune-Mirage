@@ -1,5 +1,5 @@
 const LocalInstallerScript = include("engines.wine.quick_script.local_installer_script");
-const Resource = include("utils.functions.net.resource");
+//const Resource = include("utils.functions.net.resource");
 
 new LocalInstallerScript()
     .name("Colin McRae Rally 2")
@@ -9,7 +9,7 @@ new LocalInstallerScript()
     .category("Games")
     .wineVersion("9.0")
     .wineArchitecture("x86")
-    .executable("CMR2.EXE")/*
+    .executable("CMR2.exe")/*
     .postInstall(function (wine, wizard) {
         // Recursos
         wine.verb("d3dx9");

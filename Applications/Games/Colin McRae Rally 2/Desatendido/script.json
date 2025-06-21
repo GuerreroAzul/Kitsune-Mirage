@@ -1,0 +1,8 @@
+{
+    "scriptName"                 : "Desatendido",
+    "id"                         : "applications.games.KM-CMR2.desatendido",
+    "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
+    "testingOperatingSystems"    : [],
+    "free"                       : true,
+    "requiresPatch"              : false
+}
