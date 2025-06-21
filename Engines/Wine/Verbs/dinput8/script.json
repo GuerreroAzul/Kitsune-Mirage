@@ -1,0 +1,11 @@
+{
+    "scriptName"                 : "dinput8",
+    "id"                         : "engines.wine.verbs.dinput8",
+    "compatibleOperatingSystems" : [
+        "MACOSX",
+        "LINUX"
+    ],
+    "testingOperatingSystems" : [],
+    "free"                    : true,
+    "requiresPatch"           : false
+}
