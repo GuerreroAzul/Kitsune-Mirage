@@ -1,6 +1,8 @@
 const OnlineInstallerScript = include("engines.wine.quick_script.online_installer_script");
 const Resource = include("utils.functions.net.resource");
 
+
+
 new OnlineInstallerScript()
     .name("Colin McRae Rally 2")
     .editor("Codemasters")
@@ -11,7 +13,7 @@ new OnlineInstallerScript()
     .wineArchitecture("x86")
     .executable("CMR2.EXE")
     .url("https://archive.org/download/Game-POL/Colin%20McRae%20Rally%202/CMR2.exe" )
-    .checksum("39c14354ccc98e6878adc6e98968e06d", "md5")
+    .checksum("39c14354ccc98e6878adc6e98968e06d", "md5")/*
     .postInstall(function (wine, wizard) {
         //Preferencias
         wine.setOs("win98");
@@ -33,4 +35,4 @@ new OnlineInstallerScript()
             wine.run(modPath);
             wizard.wait("Instalando CMR2 Official WRC Liveries...");    
         }
-    });
+    })*/;

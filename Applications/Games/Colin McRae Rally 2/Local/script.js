@@ -9,7 +9,7 @@ new LocalInstallerScript()
     .category("Games")
     .wineVersion("9.0")
     .wineArchitecture("x86")
-    .executable("CMR2.EXE")
+    .executable("CMR2.EXE")/*
     .postInstall(function (wine, wizard) {
         // Recursos
         wine.verb("d3dx9");
@@ -26,6 +26,6 @@ new LocalInstallerScript()
                 .get();
 
             wine.run(modPath);
-            wizard.wait("Instalando CMR2 Official WRC Liveries...");    
+            wizard.wait("Instalando CMR2 Official WRC Liveries...");   
         }
-    });
+    })*/;
