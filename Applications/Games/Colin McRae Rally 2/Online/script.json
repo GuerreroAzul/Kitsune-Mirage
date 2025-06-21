@@ -1,6 +1,6 @@
 {
-    "scriptName"                 : "dinput8",
-    "id"                         : "engines.wine.verbs.dinput8",
+    "scriptName"                 : "Online",
+    "id"                         : "applications.games.KM-CMR2.online",
     "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
     "testingOperatingSystems"    : [],
     "free"                       : true,
