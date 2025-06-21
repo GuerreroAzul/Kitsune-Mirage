@@ -1,8 +1,0 @@
-{
-    "scriptName"                 : "Online",
-    "id"                         : "applications.games.KM-CMR2.online",
-    "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
-    "testingOperatingSystems"    : [ "Linux Mint 22.1 x86_64" ],
-    "free"                       : true,
-    "requiresPatch"              : false
-}
