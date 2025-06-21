@@ -9,12 +9,8 @@ new LocalInstallerScript()
     .category("Games")
     .wineVersion("9.0")
     .wineArchitecture("x86")
-    .prefix("cmr2")
     .executable("CMR2.EXE")
     .postInstall(function (wine, wizard) {
-        //Preferencias
-        wine.setOs("win98");
-
         // Recursos
         wine.verb("d3dx9");
         wine.verb("dinput8");
