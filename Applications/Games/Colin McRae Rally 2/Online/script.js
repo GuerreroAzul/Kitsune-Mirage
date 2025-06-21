@@ -9,12 +9,14 @@ new OnlineInstallerScript()
     .category("Games")
     .wineVersion("9.0")
     .wineArchitecture("x86")
-    .wineOs("win98")
     .prefix("CMR2")
     .executable("CMR2.EXE")
     .url("https://archive.org/download/Game-POL/Colin%20McRae%20Rally%202/CMR2.exe" )
     .checksum("39c14354ccc98e6878adc6e98968e06d", "md5")
     .postInstall(function (wine, wizard) {
+        //Preferencias
+        wine.setOs("win98");
+
         // Recursos
         wine.verb("d3dx9");
         wine.verb("dinput8");
