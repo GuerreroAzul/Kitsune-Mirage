@@ -1,13 +1,7 @@
-include("engines.wine.engine");
+const Wine = include("engines.wine.engine");
 include("engines.wine.verbs");
 include("utils.functions.net.resource");
 include("engines.wine.quick_script");
-
-//Personalización
-const Prefijo     = "cmr2";
-const VersionWine = "9.0";
-const VersionArch = "x86";
-const VersionOS   = "win98";
 
 var installer = {
     id      : "km_cmr2",
@@ -16,18 +10,18 @@ var installer = {
     category: "Games",
     homepage: "https://www.ea.com/ea-studios/codemasters",
     wine: {
-        version     : `${VersionWine}`,
-        architecture: `${VersionArch}`,
-        os          : `${VersionOS}`,
+        version     : "9.0",
+        architecture: "x86",
+        os          : "win98"
     },
     mainExecutable: "CMR2.exe",
     installer: function (wizard) {
         var wine = new Wine()
             .wizard(wizard)
-            .prefix(`${Prefijo}`)
-            .version(`${VersionWine}`)
-            .architecture(`${VersionArch}`)
-            .setOs(`${VersionOS}`);
+            .prefix("cmr2")
+            .version("9.0")
+            .architecture("x86")
+            .setOs("win98");
 
         wine.install();
 
@@ -37,6 +31,11 @@ var installer = {
             .checksum("312d7a2ad2feaddc9e3efac8c565597c55e69c991fc1f97446e290b9ba047eb7")
             .name("CMR2.exe")
             .get();
+
+        if (!fileExists(exe)) {
+            wizard.error("El archivo del juego no se descargó correctamente.");
+            return;
+        }
 
         wine.start(exe);
         wizard.wait("Instala el juego y cierra el instalador cuando hayas terminado.");
@@ -55,10 +54,9 @@ var installer = {
 
             wine.run(modPath);
             wizard.wait("Instalando CMR2 Official WRC Liveries...");
-
-        // Crear acceso directo
-        // wine.createShortcut("CMR2.EXE", "Colin McRae Rally 2");
         }
+
+        wine.createShortcut("CMR2.exe", "Colin McRae Rally 2");
     }
 };
 
