@@ -1,4 +1,5 @@
 const LocalInstallerScript = include("engines.wine.quick_script.local_installer_script");
+const Resource = include("utils.functions.net.resource");
 
 new LocalInstallerScript()
     .name("Colin McRae Rally 2")
@@ -9,17 +10,24 @@ new LocalInstallerScript()
     .wineVersion("9.0")
     .wineArchitecture("x86")
     .wineOs("win98")
-    .prefix("CMR2")
+    .prefix("cmr2")
     .executable("CMR2.EXE")
-    .postInstall(function (wine) {
-        // Instalar DirectX 9 (d3dx9)
+    .postInstall(function (wine, wizard) {
+        // Recursos
         wine.verb("d3dx9");
+        wine.verb("dinput8");
 
-        //Install dinput8
-        var dinput8 = new Download()
-            .url("https://archive.org/download/DLL-POL/INPUT8/dinput8.dll")
-            .checksum("dfe561ad494e657cbc0a9a222ba1a792", "md5")
-            .to("dinput8.dll");
+        // Instalar CMR2 Official WRC Liveries
+        var option = wizard.menu("¿Deseas instalar el mod oficial WRC?", ["Sí", "No"]);
+        if (option === "Sí") {
+            var modPath = new Resource()
+                .wizard(wizard)
+                .url("https://archive.org/download/Game-POL/Colin%20McRae%20Rally%202/CMR2_Official_WRC_Liveries.exe")
+                .checksum("59e00d37450e39af3d6e2b7e7cdf2b77", "md5")
+                .name("CMR2_Official_WRC_Liveries.exe")
+                .get();
 
-        wine.copy(dinput8.path(), "C:/Program Files/Codemasters/Colin McRae Rally 2/");
+            wine.run(modPath);
+            wizard.wait("Instalando CMR2 Official WRC Liveries...");    
+        }
     });

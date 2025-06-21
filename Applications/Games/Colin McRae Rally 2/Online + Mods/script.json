@@ -1,8 +1,0 @@
-{
-    "scriptName"                 : "Online + Mods",
-    "id"                         : "applications.accessories.KM-CMR2.mods",
-    "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
-    "testingOperatingSystems"    : ["Linux Mint 22.1 x86_64"],
-    "free"                       : false,
-    "requiresPatch"              : false
-}

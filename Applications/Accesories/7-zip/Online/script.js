@@ -1,4 +1,5 @@
 const OnlineInstallerScript = include("engines.wine.quick_script.online_installer_script");
+const Resource = include("utils.functions.net.resource");
 
 new OnlineInstallerScript()
     .name("7-zip")
