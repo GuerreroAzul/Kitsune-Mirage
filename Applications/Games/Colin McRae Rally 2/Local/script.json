@@ -3,6 +3,6 @@
     "id"                         : "applications.accessories.km_cmr2.local",
     "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
     "testingOperatingSystems"    : ["Linux Mint 22.1 x86_64"],
-    "free"                       : false,
+    "free"                       : true,
     "requiresPatch"              : false
 }
