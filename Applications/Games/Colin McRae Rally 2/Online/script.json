@@ -1,6 +1,6 @@
 {
     "scriptName"                 : "Online",
-    "id"                         : "applications.accessories.km_cmr2.online",
+    "id"                         : "applications.accessories.KM-CMR2.online",
     "compatibleOperatingSystems" : [ "MACOSX", "LINUX" ],
     "testingOperatingSystems"    : ["Linux Mint 22.1 x86_64"],
     "free"                       : true,
