@@ -1,2 +1,2 @@
 # Kitsune-Mirage
-Kitsune Mirage: It is a script library in PlayOnLinux 5 - Phoenicis.
+Kitsune Mirage: Es una librerria para PlayOnLinux 5 - Phoenicis.
