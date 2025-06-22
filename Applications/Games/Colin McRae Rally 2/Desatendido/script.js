@@ -40,8 +40,8 @@ var installer = {
         wine.start(exe);
         wizard.wait("Instala el juego y cierra el instalador cuando hayas terminado.");
 
-        wine.verb("d3dx9");
-        wine.verb("dinput8");
+        wine.installVerb("d3dx9");
+        wine.installVerb("dinput8");
 
         var option = wizard.menu("¿Deseas instalar el mod oficial WRC?", ["Sí", "No"]);
         if (option === "Sí") {
